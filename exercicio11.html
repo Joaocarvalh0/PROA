@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+        var x = 0
+        var contador = 0
+        while (x < 10) {
+            var valorInformado = Number(prompt("Informe o valor: "));
+            contador = contador + valorInformado;
+            x++
+            document.write(`Valores informados: ${valorInformado}` +"<br>")
+         }
+         document.write(`A média das notas é: ${contador/10}`)
+    </script>
+  </head>
+  <body></body>
+</html>
