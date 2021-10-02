@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1 = parseFloat(prompt("Digite o primeiro valor: "))
+        var num2 = parseFloat(prompt("Digite o segundo valor: "))
+
+        function escolhaCalc(){
+            var escolha = parseInt(prompt('Selecione uma das opções a seguir: 1) Subtrair, 2) Somar, 3) Multiplicar, 4) Dividir'))
+
+            if(escolha == 1 ){
+                alert(`A subtração dos valores é: ${num1 - num2}`)
+            }
+            else if(escolha == 2){
+                alert(`A soma dos valores é: ${num1 + num2}`)
+            }
+            else if(escolha == 3){
+                alert(`A multiplicação dos valores é: ${num1*num2}`)
+            }
+            else if(escolha == 4){
+                alert(`A divisão dos valores é: ${num1/num2}`)
+            }
+            else{
+                alert('Opção inválida!')
+                escolhaCalc()
+            }
+
+        }
+
+        escolhaCalc()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
